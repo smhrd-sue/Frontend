@@ -21,7 +21,7 @@ const Player = () => {
 
     useEffect(()=>{
         console.log("Spring으로 요청")
-        let url = "http://13.125.71.45:8090/SpringBoot2/PlayerList.do"; /* aws : 서버주소 변경 */
+        let url = "http://localhost:8090/SpringBoot2/PlayerList.do"; /* aws : 서버주소 변경 */
         axios
         .post(url, {responseType : 'blob'})
         .then((res)=>{
